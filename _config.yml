@@ -1,6 +1,6 @@
 markdown: kramdown
 
 collections:
-	pages:
-		output: true
-		permalink: /:name
+    pages:
+        output: true
+        permalink: /:name
