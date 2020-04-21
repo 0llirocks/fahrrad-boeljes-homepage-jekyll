@@ -1,0 +1,46 @@
+toc:
+  - title: Boeljes
+    url: /
+    subfolderitems:
+      - page: Über uns
+        url: /ueberuns
+      - page: SB-Leistungen
+        url: /sb-leistungen
+      - page: Routen
+        url: /routen
+      - page: Wertgarantie
+        url: /wertgarantie
+      - page: Jobrad
+        url: /jobrad
+      - page: Bikeleasing
+        url: /bikeleasing
+  - title: E-Bike Service
+    url: /e-bikes
+    subfolderitems:
+      - page: Inspektionen
+        url: /inspektionen_e-bike
+      - page: Putzservice
+        url: /putzservice
+      - page: E-Rad-Service
+        url: /e-rad-service
+      - page: Nabenpflege
+        url: /nabenpflege
+      - page: Zertifizierung
+        url: /zertifizierung
+  - title: Fahrrad Service
+    url: /fahrraeder
+    subfolderitems:
+      - page: Inspektionen
+        url: /inspektionen
+      - page: Putzservice
+        url: /putzservice
+      - page: Nabenpflege
+        url: /nabenpflege
+  - title: Zubehör
+    url: /zubehoer
+    subfolderitems:
+  - title: Fahrradvermietung
+    url: /fahrradvermietung
+    subfolderitems:
+      - page: Galerie
+        url: /testraeder-galerie
