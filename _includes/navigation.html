@@ -1,20 +1,20 @@
 <nav id="leftmenu">
-			<ul class="menu">
-			{% for item in site.data.navigation.toc %}
-				<li class="{% if item.url == page.url %}active{% endif %}">
-					<a href="{{ item.url }}">{{ item.title }}</a>
-					{% assign all_url = item.subfolderitems | map: "url" %}
-					{% if all_url.size > 0 and all_url contains page.url or item.url == page.url %}
-					<ul>
-      					{% for entry in item.subfolderitems %}
-        		  		<li class="{% if item.url == page.url %}active{% endif %}">
-        		  			<a href="{{ entry.url }}">{{ entry.page }}</a>
-        		  		</li>
-     		        	{% endfor %}
-      				</ul>
-      				{% endif %}
-      			</li>
-  			{% endfor %}
+	<ul class="menu">
+		{% for item in site.data.navigation.toc %}
+		<li class="{% if item.url == page.url %}active{% endif %}">
+			<a href="{{ item.url }}">{{ item.title }}</a>
+			{% assign all_url = item.subfolderitems | map: "url" %}
+			{% if all_url.size > 0 and all_url contains page.url or item.url == page.url %}
+			<ul>
+				{% for entry in item.subfolderitems %}
+				<li class="{% if entry.url == page.url %}active{% endif %}">
+					<a href="{{ entry.url }}">{{ entry.page }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</li>
+		{% endfor %}
 				<!--<li class="active collapsible-trigger">
 					<a href="/">Boeljes</a>
 					<ul class="collapsible">
