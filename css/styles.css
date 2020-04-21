@@ -379,14 +379,14 @@ caption {
 	background: url("../images/slides/b06.jpg") center center;
 }
 #w01 {
-	background: url("images/slides/w01.jpg") center center;
+	background: url("../images/slides/w01.jpg") center center;
 }
 #w02 {
-	background: url("images/slides/w02.jpg") center center;
+	background: url("../images/slides/w02.jpg") center center;
 }
 #w03 {
-	background: url("images/slides/b03.jpg") center center;
+	background: url("/images/slides/b03.jpg") center center;
 }
 #w04 {
-	background: url("images/slides/b04.jpg") center center;
+	background: url("/images/slides/b04.jpg") center center;
 }
