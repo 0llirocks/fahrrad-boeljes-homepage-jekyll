@@ -23,8 +23,8 @@ toc:
         url: /putzservice-e-bike
       - page: Service
         url: /e-bike-service
-      - page: Nabenpflege
-        url: /nabenpflege-e-bike
+      - page: Nabenwartung
+        url: /nabenwartung-e-bike
       - page: Zertifizierung
         url: /zertifizierung
   - title: Fahrrad Service
@@ -34,8 +34,8 @@ toc:
         url: /inspektionen
       - page: Putzservice
         url: /putzservice
-      - page: Nabenpflege
-        url: /nabenpflege
+      - page: Nabenwartung
+        url: /nabenwartung
   - title: Zubehör
     url: /zubehoer
     subfolderitems:
@@ -44,3 +44,6 @@ toc:
     subfolderitems:
       - page: Galerie
         url: /testraeder-galerie
+  - title: E-Bike-Vermietung
+    url: /e-bike-vermietung
+    subfolderitems:
