@@ -10,10 +10,8 @@ toc:
         url: /routen
       - page: Wertgarantie
         url: /wertgarantie
-      - page: Jobrad
-        url: /jobrad
-      - page: Bikeleasing
-        url: /bikeleasing
+      - page: Leasing
+        url: /leasing
   - title: E-Bike Service
     url: /e-bikes
     subfolderitems:
