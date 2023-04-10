@@ -1,1 +1,1 @@
-# [Homepage für Heinz Boeljes](https://fahrrad-boeljes.de)
+# [Homepage für Vermietung Boeljes](https://vermietung.boeljes.de)

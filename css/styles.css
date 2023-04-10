@@ -56,10 +56,6 @@ body ::-moz-selection {
 	min-width: 950px;
 	max-width: 1300px;
 	color: #4C4C4B;
-	background-color: #fff;
-	background-image: url(../images/menuborder.png);
-	background-repeat: repeat-y;
-	background-position: left;
 	margin: 20px auto 0px;
 	box-shadow: 0px 0px 10px #999;
 }
@@ -112,7 +108,9 @@ header {
 
 #leftmenu {
 	float: left;
-	width: 180px;
+	width: 200px;
+	position: sticky;
+	top: 0;
 }
 #leftmenu ul.menu {
 	margin: 0px;
@@ -125,7 +123,7 @@ header {
 	font-weight:bold;
 	font-size:18px;
 	text-align:center;
-	width: 180px;
+	width: 200px;
 	background: #eff2f2; /* Old browsers */
 	background: -moz-linear-gradient(top,  #eff2f2 0%, #e3e5e5 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eff2f2), color-stop(100%,#e3e5e5)); /* Chrome,Safari4+ */
@@ -176,12 +174,10 @@ header {
 }
 
 #sideinfo {
-	margin-top:50px;
 	font-size:120%;
 }
 #sideinfo h1 {
 	font-size:100%;
-	/*margin-top:20px;*/
 	padding: 5px 20px;
 	font-weight:bold;
 	background: #eff2f2; /* Old browsers */
@@ -194,7 +190,7 @@ header {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff2f2', endColorstr='#e3e5e5',GradientType=0 ); /* IE6-9 */
 }
 #sideinfo table {
-	width: 180px;
+	width: 200px;
 	background-color: #666;
 	color: #E3E5E9;
 }
@@ -263,10 +259,11 @@ header {
 }
 
 #content {
-	margin-left: 180px;
+	margin-left: 200px;
 	padding: 10px 30px 20px;
 	font-size:16px;
 	line-height: 180%;
+	border-left: 2px solid whitesmoke;
 }
 #content p,
 #content ul {
@@ -352,7 +349,7 @@ table td {
 }
 
 table.styled {
-	margin: 10px auto;
+	margin: 10px 0px;
 	background:#fff;
 	border-collapse:collapse;
 	border-spacing:0;
@@ -380,66 +377,84 @@ caption {
  	text-align:left;
 }
 
-.partner {
-	float:left;
-	width:190px;
-	height:100px;
-	margin:5px;
-	border: #666 1px solid;
+#nav-buttons {
+	width: 100%;
+	display: inline-block;
 }
-.partner:hover {
-	border-color:var(--main-color);
-}
-.partner a div {
-	padding:5px;
-	float:left;
+
+#nav-table {
+	margin: 0 auto; 
+	border-collapse: separate;
+    border-spacing: 50px 0;
 }
 
 .hidden {
 	display: none;
 }
 
-#slides {
-	display: none;
+.nav-links {
+	color: #4C4C4B !important;
 }
 
-.slick {
-	height: 300px;
-	width: auto;
-	margin-left: 180px;
+.nav-button {
+	height: 110px;
+	width: 110px;
+	border-color: var(--main-color);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	text-align: center;
+	float: left;
 }
-.slick div {
-	background-size: cover !important;
-	width: auto;
-	height: 300px;
+
+.nav-button:hover {
+	background-color: var(--main-color);
+	border-color: var(--link-color);
+	cursor: pointer;
 }
-#b01 {
-	background: url("../images/slides/b01.jpg") center center;
+
+.fa-icon {
+	font-size: 2.5em;
+	margin: 15px 0px;
 }
-#b02 {
-	background: url("../images/slides/b02.jpg") center center;
+
+@media screen and (max-width : 1000px) {
+	#main {
+		width: auto !important;
+		min-width: auto !important;
+		margin: 10px !important;
+	}
+	#leftmenu {
+		display: none !important;
+	}
+	#content {
+		margin-left: 0 !important;
+		border-left: none;
+	}
+	#logo {
+		margin: 70px 0px !important;
+	}
+	header {
+		background-image: url(../images/header_short.png) !important;
+	}
+	footer {
+		min-width: auto !important;
+		padding: 0px !important;
+	}
+	html, body {
+		min-width: auto !important;
+	}
 }
-#b03 {
-	background: url("../images/slides/b03.jpg") center center;
-}
-#b04 {
-	background: url("../images/slides/b04.jpg") center center;
-}
-#b05 {
-	background: url("../images/slides/b05.jpg") center center;
-}
-#b06 {
-	background: url("../images/slides/b06.jpg") center center;
-}
-#w01 {
-	background: url("../images/slides/w01.jpg") center center;
-}
-#w02 {
-	background: url("../images/slides/w02.jpg") center center;
-}
-#w03 {
-	background: url("/images/slides/b03.jpg") center center;
-}
-#w04 {
-	background: url("/images/slides/b04.jpg") center center;
+
+@media screen and (max-width : 600px) {
+	header {
+		background-image: none !important;
+	}	
+	#nav-table {
+		border-spacing: 0 !important;
+	}
+	.nav-button {
+		height: 70px !important;
+    	width: 80px !important;
+	}
 }
