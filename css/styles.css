@@ -418,6 +418,13 @@ caption {
 	margin: 15px 0px;
 }
 
+.nav-table-desktop {
+	display: table-row;
+}
+.nav-table-mobile {
+	display: none;
+}
+
 @media screen and (max-width : 1000px) {
 	#main {
 		width: auto !important;
@@ -429,7 +436,8 @@ caption {
 	}
 	#content {
 		margin-left: 0 !important;
-		border-left: none;
+		border-left: none;		
+		padding: 10px 30px 20px;
 	}
 	#logo {
 		margin: 70px 0px !important;
@@ -444,17 +452,36 @@ caption {
 	html, body {
 		min-width: auto !important;
 	}
+	.nav-button {
+		margin-bottom: 10px;
+	}
+	.nav-table-desktop {
+		display: none;
+	}
+	.nav-table-mobile {
+		display: table-row;
+	}
 }
 
 @media screen and (max-width : 600px) {
 	header {
 		background-image: none !important;
 	}	
+	#content {		
+		padding: 10px 10px 20px;
+	}
 	#nav-table {
 		border-spacing: 0 !important;
 	}
 	.nav-button {
 		height: 70px !important;
     	width: 80px !important;
+		margin-bottom: 30px;
+	}
+	.nav-table-desktop {
+		display: none;
+	}
+	.nav-table-mobile {
+		display: table-row;
 	}
 }
